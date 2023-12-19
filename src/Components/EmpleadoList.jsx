@@ -2,6 +2,7 @@ import { ListGroup, Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
+import EmpleadoAvatar from "./EmpleadoAvatar";
 
 const EmpleadoList = () => {
   return (
@@ -9,12 +10,7 @@ const EmpleadoList = () => {
       <ListGroup.Item>
         <Row className="justify-content-center align-items-center">
           <Col lg="2" className="text-center">
-            <Image
-              src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg"
-              fluid
-              roundedCircle
-              className="avatar"
-            ></Image>
+            <EmpleadoAvatar></EmpleadoAvatar>
           </Col>
           <Col lg="10">
             <h3 className="text-center text-md-start">Usuario 1</h3>
