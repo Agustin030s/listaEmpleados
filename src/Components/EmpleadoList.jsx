@@ -1,12 +1,11 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import EmpleadoRow from "./EmpleadoRow";
 
-const EmpleadoList = () => {
+const EmpleadoList = ({empleados}) => {
+
   return (
     <ListGroup>
-        <EmpleadoRow></EmpleadoRow>
-        <EmpleadoRow></EmpleadoRow>
-        <EmpleadoRow></EmpleadoRow>
+      {empleados.map((empleado) => <EmpleadoRow empleado={empleado}></EmpleadoRow>)}
     </ListGroup>
   );
 };
